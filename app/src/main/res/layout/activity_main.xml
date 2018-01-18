@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abdelrahman.boundandstartforegroundserviceexample.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getRunningService"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/updateLastEvent"
+        android:layout_marginRight="15sp"
+        android:layout_marginLeft="15sp"
+        android:text="Happy coding!"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/stopMyService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="stop service" />
+
+    <Button
+        android:id="@+id/getRunningService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/stopMyService"
+        android:layout_centerHorizontal="true"
+        android:text="get running service" />
+
+    <Button
+        android:id="@+id/startAndBind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start and bind"
+        android:layout_below="@+id/stopMyService"
+        android:layout_centerHorizontal="true" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/startForrgroundService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startAndBind"
+        android:layout_centerHorizontal="true"
+        android:text="startForrgroundService" />
+
+</RelativeLayout>
