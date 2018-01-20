@@ -3,8 +3,17 @@
 This repository is talking about services using Android Studio
 
 # Content
+-  start service
+- bind existing service
+- foreground service
+- Chronometer in services
+- LocationListener in services
+- interface in services
+- callbacks for an interface in the services
 
-in this project I created a service class to bind it to the MainActivity
+# Details
+
+In this project I created a service class to bind it to the MainActivity
 
 when you bind  a service to an activity, you have to unbind it when the Activity is stopped or destroyed
 It prefers to unbind it when the activity is stopped.
