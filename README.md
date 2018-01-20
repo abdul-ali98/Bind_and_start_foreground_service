@@ -28,6 +28,11 @@ the most powerful of using foreground service its priority like the foregeound a
 basiclly, the system considers it to be something the user is actively aware of and thus not a candidate
 for killing when low on memory. (It is still theoretically possible for the service to be killed under extreme
 memory pressure from the current foreground application,but in practice this should not be a concern.)
+# Chronometer and Location Listener 
+In the service I implemented the interface LocationListener and Started a chronometer
+Actually I did that to show you how to set callbacks in the activity based on any event happen in the sevice like
+changing the location using the interface we created in the service class.
+Also I explained how to keep the chronmeter running in the background and get its value when the activity starts.
 # For more details 
 Feel free to contact me.  happy coding  :) . 
 Please check the documentation
